@@ -1,7 +1,8 @@
-# [Serveur DHCP](https://github.com/Fairskip/DHCPWin1/blob/main/PC%20renamed.jpg)
+# Serveur DHCP
 
 Nom d'hôte | SRV-QuestWin  
 :---:|:---:
+
 
 
 ---------
@@ -83,8 +84,22 @@ Réservation > clic droit => [nouvelle réservation](https://github.com/Fairskip
   
 Ajouter
 
-# 7. IP Ordi Host Windy
-* [ipconfig /release](https://github.com/Fairskip/DHCPWindows/blob/main/Host%20IP%20release.jpg)
-* [ipconfig /renew](https://github.com/Fairskip/DHCPWindows/blob/main/Host%20IP%20renew.jpg)
+# 7. Requête IP : Ordi Host Windy
+* IPconfig
+![Predhcp](https://github.com/Fairskip/DHCPWindows/blob/main/Windy%20Pre%20dhcp.png)
+* IPconfig /release
+  ![ipconfig /release](https://github.com/Fairskip/DHCPWindows/blob/main/Host%20IP%20release.jpg)
+* IPconfig /renew
+  ![ipconfig /renew](https://github.com/Fairskip/DHCPWindows/blob/main/Host%20IP%20renew.jpg)
+
+* Redemande d'IP à nouveau pour obtenir le même Ip réservé
+![again](https://github.com/Fairskip/DHCPWindows/blob/main/Windy%20Release%20et%20renew%20again.png)
 
 
+# 7. Reqête IP : Host Fairskip Virtual Box
+* IPconfig /release
+* Ipconfig /renew
+
+
+# 8. Baux d'adresses
+  ![adresses pris](https://github.com/Fairskip/DHCPWindows/blob/main/IP%20Distribution.jpg)
