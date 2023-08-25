@@ -96,10 +96,12 @@ Ajouter
 ![again](https://github.com/Fairskip/DHCPWindows/blob/main/Windy%20Release%20et%20renew%20again.png)
 
 
-# 7. Reqête IP : Host Fairskip Virtual Box
-* IPconfig /release
-* Ipconfig /renew
+# 7. Requête IP : Host Fairskip Virtual Box
+* sudo dhclient -r enp0s3
+* sudo dhclient enp0s3
 
+![Ip requete](https://github.com/Fairskip/DHCPWindows/blob/main/Fairskip%20VB%20Ip%20requete.jpg)
+![requete IP](https://github.com/Fairskip/DHCPWindows/blob/main/Fairskip%20VB%20new%20ip.png)
 
 # 8. Baux d'adresses
   ![adresses pris](https://github.com/Fairskip/DHCPWindows/blob/main/IP%20Distribution.jpg)
