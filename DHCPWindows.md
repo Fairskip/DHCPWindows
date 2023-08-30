@@ -84,7 +84,20 @@ Réservation > clic droit => [nouvelle réservation](https://github.com/Fairskip
   
 Ajouter
 
-# 7. Requête IP : Ordi Host Windy
+# 7. Firewall sur Windows 
+
+Ping les hosts vers le serveur et le serveur vers les hosts. Si les pings n'atteignent les windows, c'est à cause du firewall. Donc sur les machines windows (Host & Serveur):
+  - Barre de recherche => wf.msc
+  - [Pare-feu Windows avec fonctions avancées de sécurité](https://github.com/Fairskip/DHCPWindows/blob/main/Firewall%200.png) > Règles de trafic entrant > Nouvelle règles.
+  - [Assistant nouvelle règle de trafic entrant](https://github.com/Fairskip/DHCPWindows/blob/main/Firewall%201.png) > Type de règle => [personnalisée](https://github.com/Fairskip/DHCPWindows/blob/main/Firewall%202.png)
+  - Programme => défaut
+  - Protocole et ports => [ICMPv4](https://github.com/Fairskip/DHCPWindows/blob/main/Firewall%203.png)
+  - Etendu, action & profile => défaut
+  - Nom => Donner un nom au règle
+  - Terminer et Verifier que la règle crée est activée.
+  - Reping à nouveau de hosts à serveur et de serveur à hosts
+
+# 8. Requête IP : Ordi Host Windy (Windows)
 * IPconfig
 ![Predhcp](https://github.com/Fairskip/DHCPWindows/blob/main/Windy%20Pre%20dhcp.png)
 * IPconfig /release
@@ -96,12 +109,12 @@ Ajouter
 ![again](https://github.com/Fairskip/DHCPWindows/blob/main/Windy%20Release%20et%20renew%20again.png)
 
 
-# 7. Requête IP : Host Fairskip Virtual Box
+# 9. Requête IP : Host Fairskip Virtual Box (Ubuntu)
 * sudo dhclient -r enp0s3
 * sudo dhclient enp0s3
 
 ![Ip requete](https://github.com/Fairskip/DHCPWindows/blob/main/Fairskip%20VB%20Ip%20requete.jpg)
 ![requete IP](https://github.com/Fairskip/DHCPWindows/blob/main/Fairskip%20VB%20new%20ip.png)
 
-# 8. Baux d'adresses
+# 8. Baux d'adresses des IP pris
   ![adresses pris](https://github.com/Fairskip/DHCPWindows/blob/main/IP%20Distribution.jpg)
